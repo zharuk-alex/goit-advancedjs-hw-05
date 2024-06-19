@@ -29,10 +29,10 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           source: dist
+          branch: gh-pages
 
       # - name: Copy compiled files to gh-pages branch
       #   uses: actions/deploy-pages@v1
       #   with:
       #     github-token: ${{ secrets.GITHUB_TOKEN }}
       #     source: dist
-      #     branch: gh-pages
