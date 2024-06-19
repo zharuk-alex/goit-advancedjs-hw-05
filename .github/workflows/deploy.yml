@@ -28,7 +28,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          source: dist
 
       # - name: Copy compiled files to gh-pages branch
       #   uses: actions/deploy-pages@v1
