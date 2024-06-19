@@ -1,0 +1,19 @@
+{
+  "name": "typescript_vsc_settings",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc --watch & web-dev-server --node-resolve --open --watch",
+    "build": "tsc && cp index.html dist/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@web/dev-server": "^0.4.5"
+  },
+  "dependencies": {
+    "prettier": "^3.3.2"
+  }
+}
