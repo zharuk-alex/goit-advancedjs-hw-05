@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "tsc --watch & web-dev-server --node-resolve --open --watch",
-    "build": "tsc && mkdir -p build_dist && mv ./dist/*.js build_dist/dist && mv ./dist/*.js.map build_dist/dist && cp index.html build_dist/"
+    "build": "tsc && mkdir -p build_dist && mkdir -p build_dist/dist && mv ./dist/*.js build_dist/dist && mv ./dist/*.js.map build_dist/dist && cp index.html build_dist/"
   },
   "keywords": [],
   "author": "",
