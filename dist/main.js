@@ -6,4 +6,4 @@ if (button && input) {
         concatenation(input.value, 'hello!');
     });
 }
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=main.js.map
