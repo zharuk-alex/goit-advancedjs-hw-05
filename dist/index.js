@@ -1,4 +1,4 @@
-import { concatenation } from './concatenation';
+import { concatenation } from './concatenation.js';
 const button = document.querySelector('button');
 const input = document.querySelector('input');
 if (button && input) {
@@ -6,4 +6,4 @@ if (button && input) {
         concatenation(input.value, 'hello!');
     });
 }
-//# sourceMappingURL=main.js.map
+//# sourceMappingURL=index.js.map
