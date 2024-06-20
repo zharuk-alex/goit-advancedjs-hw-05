@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "rootDir": ".",
+    "rootDir": "./src",
     "outDir": "./dist",
     "allowJs": false,
     "allowSyntheticDefaultImports": true,
@@ -8,13 +8,18 @@
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "lib": ["dom", "ES2021"],
-    "module": "es2020",
+    "allowImportingTsExtensions": false,
     "moduleResolution": "node",
+    "module": "es2020",
+    "target": "es2019",
     "preserveConstEnums": true,
     "skipLibCheck": true,
     "strictNullChecks": true,
-    "target": "es2019",
     "sourceMap": true
   },
-  "include": ["**/*.ts"]
+  "include": ["**/*.ts"],
+  "tsc-alias": {
+    "resolveFullPaths": true,
+    "verbose": false
+  }
 }

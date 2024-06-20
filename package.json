@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "tsc --watch & web-dev-server --node-resolve --open --watch",
-    "build": "tsc && mkdir -p build_dist && mkdir -p build_dist/dist && mv ./dist/*.js build_dist/dist && mv ./dist/*.js.map build_dist/dist && cp index.html build_dist/"
+    "start": "tsc --watch & tsc-alias & web-dev-server --node-resolve --open --watch",
+    "build": "tsc && tsc-alias && mkdir -p build_dist && mkdir -p build_dist/dist && mv ./dist/*.js build_dist/dist && mv ./dist/*.js.map build_dist/dist && cp index.html build_dist/"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@web/dev-server": "^0.4.5"
+    "@web/dev-server": "^0.4.5",
+    "tsc-alias": "^1.8.10"
   },
   "dependencies": {
     "prettier": "^3.3.2"
